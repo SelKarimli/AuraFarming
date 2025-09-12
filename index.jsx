@@ -1,0 +1,169 @@
+import React from "react";
+
+// AuraFarmingLanding
+// Single-file React component (Tailwind CSS assumed) for a landing page
+
+export default function AuraFarmingLanding() {
+  return (
+    <div className="min-h-screen bg-gray-50 text-gray-800">
+      <header className="bg-white shadow">
+        <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-md bg-green-600 flex items-center justify-center text-white font-bold">A</div>
+            <div>
+              <h1 className="text-lg font-semibold">AuraFarming</h1>
+              <p className="text-xs text-gray-500">Smart solutions for agriculture</p>
+            </div>
+          </div>
+
+          <nav className="space-x-6 text-sm hidden md:flex">
+            <a href="#how" className="hover:text-green-700">How it Works</a>
+            <a href="#benefits" className="hover:text-green-700">Benefits</a>
+            <a href="#contact" className="hover:text-green-700">Contact</a>
+          </nav>
+
+          <div className="flex items-center gap-3">
+            <a href="#signup" className="px-4 py-2 bg-green-600 text-white rounded-md text-sm shadow-sm">Get Started</a>
+          </div>
+        </div>
+      </header>
+
+      <main className="max-w-6xl mx-auto px-6 py-12">
+        <section className="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 className="text-3xl font-extrabold leading-tight">Empowering Farmers with Smart Farming</h2>
+            <p className="mt-4 text-gray-600">AuraFarming is a platform designed to connect technology with agriculture. We aim to make farming more efficient through data-driven insights, accessible resources, and collaboration opportunities.</p>
+
+            <ul className="mt-6 space-y-3">
+              <li className="flex items-start gap-3">
+                <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">✓</div>
+                <div>
+                  <strong>Smart Monitoring</strong>
+                  <div className="text-sm text-gray-500">IoT-based crop and soil monitoring for informed decisions.</div>
+                </div>
+              </li>
+
+              <li className="flex items-start gap-3">
+                <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">✓</div>
+                <div>
+                  <strong>Resource Access</strong>
+                  <div className="text-sm text-gray-500">Connect with suppliers, experts, and funding opportunities.</div>
+                </div>
+              </li>
+
+              <li className="flex items-start gap-3">
+                <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">✓</div>
+                <div>
+                  <strong>Collaboration</strong>
+                  <div className="text-sm text-gray-500">Farmers, researchers, and investors working together.</div>
+                </div>
+              </li>
+            </ul>
+
+            <div className="mt-6 flex gap-3">
+              <a href="#signup" className="px-4 py-2 bg-green-600 text-white rounded-md">Start</a>
+              <a href="#contact" className="px-4 py-2 border border-gray-200 rounded-md text-sm">Contact</a>
+            </div>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-sm">
+            <h3 className="font-semibold">Quick Sign Up (Demo)</h3>
+            <p className="text-sm text-gray-500 mt-2">Choose your role and create a short profile.</p>
+
+            <form className="mt-4 space-y-3" onSubmit={(e) => e.preventDefault()}>
+              <div>
+                <label className="text-xs text-gray-600">Role</label>
+                <select className="w-full mt-1 px-3 py-2 border rounded-md bg-white">
+                  <option>Farmer</option>
+                  <option>Investor</option>
+                  <option>Researcher</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="text-xs text-gray-600">Name</label>
+                <input className="w-full mt-1 px-3 py-2 border rounded-md" placeholder="Your Name" />
+              </div>
+
+              <div>
+                <label className="text-xs text-gray-600">Email</label>
+                <input type="email" className="w-full mt-1 px-3 py-2 border rounded-md" placeholder="email@example.com" />
+              </div>
+
+              <div>
+                <button className="w-full mt-2 px-4 py-2 bg-green-600 text-white rounded-md">Create Demo Account</button>
+              </div>
+            </form>
+
+            <div className="mt-6 text-xs text-gray-400">This demo form is for preview only. Backend integration required.</div>
+          </div>
+        </section>
+
+        <section id="how" className="mt-12">
+          <h3 className="text-2xl font-semibold">How it Works</h3>
+          <div className="mt-4 grid md:grid-cols-3 gap-6">
+            <div className="bg-white p-4 rounded-lg shadow-sm">
+              <h4 className="font-semibold">1. Create Profile</h4>
+              <p className="text-sm text-gray-500 mt-2">Farmers showcase their needs and goals. Investors and researchers explore opportunities.</p>
+            </div>
+
+            <div className="bg-white p-4 rounded-lg shadow-sm">
+              <h4 className="font-semibold">2. Match &amp; Collaborate</h4>
+              <p className="text-sm text-gray-500 mt-2">Our system connects the right people to foster cooperation and investment.</p>
+            </div>
+
+            <div className="bg-white p-4 rounded-lg shadow-sm">
+              <h4 className="font-semibold">3. Track Progress</h4>
+              <p className="text-sm text-gray-500 mt-2">Monitor projects, resources, and impact through reports and analytics.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="benefits" className="mt-12">
+          <h3 className="text-2xl font-semibold">Benefits</h3>
+          <ul className="mt-4 space-y-3">
+            <li className="bg-white p-4 rounded-lg shadow-sm">Easier access to smart farming tools.</li>
+            <li className="bg-white p-4 rounded-lg shadow-sm">Funding and collaboration opportunities.</li>
+            <li className="bg-white p-4 rounded-lg shadow-sm">Stronger agricultural communities.</li>
+          </ul>
+        </section>
+
+        <section id="contact" className="mt-12 mb-12 grid md:grid-cols-2 gap-6 items-start">
+          <div className="bg-white p-6 rounded-lg shadow-sm">
+            <h3 className="text-xl font-semibold">Contact Us</h3>
+            <p className="mt-2 text-gray-600">For collaboration, feedback, or investment inquiries:</p>
+            <ul className="mt-4 text-sm text-gray-700">
+              <li><strong>Email:</strong> info@aurafarming.com</li>
+              <li><strong>Phone:</strong> +994 50 000 0000</li>
+            </ul>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-sm">
+            <h3 className="text-xl font-semibold">Join the Pilot</h3>
+            <p className="text-sm text-gray-600 mt-2">Sign up to be part of our first pilot program.</p>
+            <form onSubmit={(e) => e.preventDefault()} className="mt-4 space-y-3">
+              <input className="w-full px-3 py-2 border rounded-md" placeholder="Name" />
+              <input className="w-full px-3 py-2 border rounded-md" placeholder="Email" />
+              <select className="w-full px-3 py-2 border rounded-md">
+                <option>Farmer</option>
+                <option>Investor</option>
+                <option>Researcher</option>
+              </select>
+              <button className="w-full px-4 py-2 bg-green-600 text-white rounded-md">Sign Up</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer className="bg-white border-t">
+        <div className="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between text-sm text-gray-500">
+          <div>© {new Date().getFullYear()} AuraFarming • All rights reserved</div>
+          <div className="space-x-4">
+            <a href="#" className="hover:text-gray-700">Privacy</a>
+            <a href="#" className="hover:text-gray-700">Terms</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
