@@ -1,154 +1,381 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>AuraFarming — Smart Agriculture</title>
+    <title>AuraFarming — Smart Agriculture Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-section {
+            background-image: url('https://placehold.co/1920x1080/16a34a/ffffff?text=');
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
 </head>
 <body class="antialiased bg-gray-50 text-gray-800">
-    <header class="bg-white shadow">
-        <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-md bg-green-600 flex items-center justify-center text-white font-bold">A</div>
+                <div class="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
+                        <path fill-rule="evenodd" d="M11.5 2.5a6.046 6.046 0 0 0-4.045 10.44L3.89 16.51a.75.75 0 0 0-.15.827l.086.13a6 6 0 0 0 1.254 3.15.75.75 0 0 0 .914-.23l3.682-5.787a6.046 6.046 0 0 0 10.155-2.074.75.75 0 0 0-.317-.674l-2.73-2.096c-.34-.26-.777-.32-1.157-.175l-1.928.761a.75.75 0 0 0-.613.684v1.86a.75.75 0 0 1-1.5 0v-1.86a.75.75 0 0 0-.613-.684l-1.928-.761c-.38-.145-.817-.085-1.157.175l-2.73 2.096A6.046 6.046 0 0 0 11.5 2.5ZM17.152 7.643l1.838 1.411a.75.75 0 0 1 .15.827c-.201.32-.424.622-.663.91l-1.821-2.457c.361-.274.67-.59.996-.949Zm-9.155-1.92a4.5 4.5 0 0 1 7.237 2.083l-1.875 2.529a4.5 4.5 0 0 1-5.362-4.612Z" clip-rule="evenodd" />
+                    </svg>
+                </div>
                 <div>
-                    <h1 class="text-lg font-semibold">AuraFarming</h1>
-                    <p class="text-xs text-gray-500">Smart solutions for agriculture</p>
+                    <h1 class="text-lg font-semibold text-gray-900">AuraFarming</h1>
+                    <p class="text-xs text-gray-500">Smart Agriculture Solutions</p>
                 </div>
             </div>
-            <nav class="space-x-6 text-sm hidden md:flex">
-                <a href="#how" class="hover:text-green-700">How it Works</a>
+            <nav class="space-x-8 text-sm hidden md:flex font-medium text-gray-600">
+                <a href="#how-it-works" class="hover:text-green-700">How It Works</a>
                 <a href="#benefits" class="hover:text-green-700">Benefits</a>
+                <a href="#about" class="hover:text-green-700">About</a>
                 <a href="#contact" class="hover:text-green-700">Contact</a>
             </nav>
             <div class="flex items-center gap-3">
-                <a href="#signup" class="px-4 py-2 bg-green-600 text-white rounded-md text-sm shadow-sm">Get Started</a>
+                <a href="#join" class="px-5 py-2 bg-green-600 text-white font-medium rounded-lg text-sm shadow-md hover:bg-green-700 transition duration-300">Get Started</a>
             </div>
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-6 py-12">
-        <section class="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-                <h2 class="text-3xl font-extrabold leading-tight">Empowering Farmers with Smart Farming</h2>
-                <p class="mt-4 text-gray-600">AuraFarming connects technology with agriculture. Our mission is to make farming more efficient through data-driven insights, accessible resources, and collaboration opportunities.</p>
-                <ul class="mt-6 space-y-3">
-                    <li class="flex items-start gap-3">
-                        <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">✓</div>
-                        <div>
-                            <strong>Smart Monitoring</strong>
-                            <div class="text-sm text-gray-500">IoT-based crop and soil monitoring for informed decisions.</div>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section text-white relative py-20 md:py-32">
+            <div class="absolute inset-0 bg-green-800 opacity-80"></div>
+            <div class="max-w-7xl mx-auto px-6 relative z-10 text-center md:text-left">
+                <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">Empowering Farmers with Smart Technology</h2>
+                <p class="mt-4 max-w-2xl mx-auto md:mx-0 text-lg opacity-90">AuraFarming connects technology with agriculture, making farming more efficient through data-driven insights, accessible resources, and collaboration opportunities between farmers, investors, and researchers.</p>
+                <div class="mt-8 flex flex-col md:flex-row items-center justify-center md:justify-start gap-6 font-medium text-lg">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-green-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 15.75-2.433-.975A1.875 1.875 0 0 1 12 11.25h-1.5m1.5 4.5h-.75m-4.5 0H5.25A2.25 2.25 0 0 1 3 13.5V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v3.75m-18 6.75-2.25 2.25-2.25 2.25m4.5-4.5h3m-3 0V15m3 0V12m4.5 4.5h1.5m-1.5 0v-1.5m0-6.75h.008v.008H16.5v-.008Zm1.5 0v.008h.008V9Zm1.5 0h.008v.008H19.5v-.008Zm0 1.5h.008v.008H19.5v-.008Z" />
+                            </svg>
                         </div>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">✓</div>
-                        <div>
-                            <strong>Resource Access</strong>
-                            <div class="text-sm text-gray-500">Connect with suppliers, experts, and funding opportunities.</div>
+                        <div class="text-base text-left">
+                            <strong class="block">Smart Monitoring</strong>
+                            <div class="text-sm opacity-80">IoT-based crop and soil monitoring for informed decisions.</div>
                         </div>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">✓</div>
-                        <div>
-                            <strong>Collaboration</strong>
-                            <div class="text-sm text-gray-500">Farmers, researchers, and investors working together.</div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-green-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.879m0 0a.75.75 0 1 1-1.06-1.06l.338-.338v-.563h-.563a.75.75 0 0 1-.75-.75V12a.75.75 0 0 1 .75-.75h.563V10.25l-.338-.338a.75.75 0 1 1 1.06-1.06l.879.879M15 15.75a.75.75 0 0 0 .75.75h.75a.75.75 0 0 0 .75-.75v-.75a.75.75 0 0 0-.75-.75h-.75a.75.75 0 0 0-.75.75v.75Z" />
+                            </svg>
                         </div>
-                    </li>
-                </ul>
-                <div class="mt-6 flex gap-3">
-                    <a href="#signup" class="px-4 py-2 bg-green-600 text-white rounded-md">Start</a>
-                    <a href="#contact" class="px-4 py-2 border border-gray-200 rounded-md text-sm">Contact</a>
-                </div>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <h3 class="font-semibold">Quick Sign Up (Demo)</h3>
-                <p class="text-sm text-gray-500 mt-2">Choose your role and create a short profile.</p>
-                <form class="mt-4 space-y-3">
-                    <div>
-                        <label class="text-xs text-gray-600">Role</label>
-                        <select class="w-full mt-1 px-3 py-2 border rounded-md bg-white">
-                            <option>Farmer</option>
-                            <option>Investor</option>
-                            <option>Researcher</option>
-                        </select>
+                        <div class="text-base text-left">
+                            <strong class="block">Resource Access</strong>
+                            <div class="text-sm opacity-80">Connect with suppliers, experts, and funding opportunities.</div>
+                        </div>
                     </div>
-                    <div>
-                        <label class="text-xs text-gray-600">Name</label>
-                        <input class="w-full mt-1 px-3 py-2 border rounded-md" placeholder="Your Name" />
-                    </div>
-                    <div>
-                        <label class="text-xs text-gray-600">Email</label>
-                        <input type="email" class="w-full mt-1 px-3 py-2 border rounded-md" placeholder="email@example.com" />
-                    </div>
-                    <div>
-                        <button class="w-full mt-2 px-4 py-2 bg-green-600 text-white rounded-md">Create Demo Account</button>
-                    </div>
-                </form>
-                <div class="mt-6 text-xs text-gray-400">This demo form is for preview only.</div>
-            </div>
-        </section>
-
-        <section id="how" class="mt-12">
-            <h3 class="text-2xl font-semibold">How it Works</h3>
-            <div class="mt-4 grid md:grid-cols-3 gap-6">
-                <div class="bg-white p-4 rounded-lg shadow-sm">
-                    <h4 class="font-semibold">1. Create Profile</h4>
-                    <p class="text-sm text-gray-500 mt-2">Farmers showcase their needs and goals. Investors and researchers explore opportunities.</p>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow-sm">
-                    <h4 class="font-semibold">2. Match &amp; Collaborate</h4>
-                    <p class="text-sm text-gray-500 mt-2">The system connects the right people to foster cooperation and investment.</p>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow-sm">
-                    <h4 class="font-semibold">3. Track Progress</h4>
-                    <p class="text-sm text-gray-500 mt-2">Monitor projects and impact through reports and analytics.</p>
                 </div>
             </div>
         </section>
 
-        <section id="benefits" class="mt-12">
-            <h3 class="text-2xl font-semibold">Benefits</h3>
-            <ul class="mt-4 space-y-3">
-                <li class="bg-white p-4 rounded-lg shadow-sm">Easier access to smart farming tools.</li>
-                <li class="bg-white p-4 rounded-lg shadow-sm">Funding and collaboration opportunities.</li>
-                <li class="bg-white p-4 rounded-lg shadow-sm">Stronger agricultural communities.</li>
-            </ul>
+        <!-- Stats Section -->
+        <section class="max-w-7xl mx-auto px-6 py-12">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center text-gray-700">
+                <div>
+                    <p class="text-4xl lg:text-5xl font-extrabold text-green-600">500+</p>
+                    <p class="mt-2 text-sm font-medium">Active Farmers</p>
+                </div>
+                <div>
+                    <p class="text-4xl lg:text-5xl font-extrabold text-green-600">50+</p>
+                    <p class="mt-2 text-sm font-medium">Investors</p>
+                </div>
+                <div>
+                    <p class="text-4xl lg:text-5xl font-extrabold text-green-600">1M+</p>
+                    <p class="mt-2 text-sm font-medium">Hectares Monitored</p>
+                </div>
+                <div>
+                    <p class="text-4xl lg:text-5xl font-extrabold text-green-600">40%</p>
+                    <p class="mt-2 text-sm font-medium">Yield Increase</p>
+                </div>
+            </div>
         </section>
 
-        <section id="contact" class="mt-12 mb-12 grid md:grid-cols-2 gap-6 items-start">
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <h3 class="text-xl font-semibold">Contact Us</h3>
-                <p class="mt-2 text-gray-600">For collaboration, feedback, or investment inquiries:</p>
-                <ul class="mt-4 text-sm text-gray-700">
-                    <li><strong>Email:</strong> info@aurafarming.com</li>
-                    <li><strong>Phone:</strong> +994 50 000 0000</li>
-                </ul>
+        <!-- Why Choose AuraFarming -->
+        <section id="benefits" class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h3 class="text-3xl md:text-4xl font-extrabold">Why Choose AuraFarming?</h3>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Transform your agricultural operations with technology-driven solutions and collaborative partnerships.</p>
+                <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-2xl shadow-sm text-left">
+                        <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75A2.25 2.25 0 0 0 15.75 1.5H13.5m-3 0a.75.75 0 0 0-.75.75v3.75h4.5V2.25a.75.75 0 0 0-.75-.75h-3Zm.75 12h-3m3 3h-3m3 3h-3m3-12h.008v.008h-.008V12Z" />
+                            </svg>
+                        </div>
+                        <h4 class="mt-4 font-semibold text-lg">Smart Farming Tools</h4>
+                        <p class="text-sm text-gray-500 mt-2">Access cutting-edge IoT sensors, monitoring systems, and mobile apps designed specifically for modern agriculture.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-2xl shadow-sm text-left">
+                        <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.879m0 0a.75.75 0 1 1-1.06-1.06l.338-.338v-.563h-.563a.75.75 0 0 1-.75-.75V12a.75.75 0 0 1 .75-.75h.563V10.25l-.338-.338a.75.75 0 1 1 1.06-1.06l.879.879M15 15.75a.75.75 0 0 0 .75.75h.75a.75.75 0 0 0 .75-.75v-.75a.75.75 0 0 0-.75-.75h-.75a.75.75 0 0 0-.75.75v.75Z" />
+                            </svg>
+                        </div>
+                        <h4 class="mt-4 font-semibold text-lg">Funding Opportunities</h4>
+                        <p class="text-sm text-gray-500 mt-2">Connect directly with investors interested in agricultural innovation and sustainable farming practices.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-2xl shadow-sm text-left">
+                        <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 10.5a9.75 9.75 0 1 1 19.5 0 9.75 9.75 0 0 1-19.5 0Z" />
+                            </svg>
+                        </div>
+                        <h4 class="mt-4 font-semibold text-lg">Agricultural Communities</h4>
+                        <p class="text-sm text-gray-500 mt-2">Join a thriving network of farmers, researchers, and agricultural experts sharing knowledge and resources.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-2xl shadow-sm text-left">
+                        <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6.75a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 19.5a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </div>
+                        <h4 class="mt-4 font-semibold text-lg">Risk Management</h4>
+                        <p class="text-sm text-gray-500 mt-2">Use data-driven insights to minimize crop risks and optimize farming decisions with predictive analytics.</p>
+                    </div>
+                </div>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <h3 class="text-xl font-semibold">Join the Pilot</h3>
-                <p class="text-sm text-gray-600 mt-2">Sign up to be part of our first pilot program.</p>
-                <form class="mt-4 space-y-3">
-                    <input class="w-full px-3 py-2 border rounded-md" placeholder="Name" />
-                    <input class="w-full px-3 py-2 border rounded-md" placeholder="Email" />
-                    <select class="w-full px-3 py-2 border rounded-md">
-                        <option>Farmer</option>
-                        <option>Investor</option>
-                        <option>Researcher</option>
-                    </select>
-                    <button class="w-full px-4 py-2 bg-green-600 text-white rounded-md">Sign Up</button>
-                </form>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-16">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h3 class="text-3xl md:text-4xl font-extrabold">How AuraFarming Works</h3>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Simple steps to transform agriculture through technology and collaboration.</p>
+                <div class="mt-12 grid md:grid-cols-3 gap-8 text-left">
+                    <div class="bg-white p-6 rounded-2xl shadow-lg relative">
+                        <div class="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-white flex items-center justify-center font-bold text-gray-400 text-lg border border-gray-200">01</div>
+                        <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center text-white text-2xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                <path d="M19 8H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3Zm-1.5 5.25a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm3 0a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5Zm-21-3a2.25 2.25 0 0 1 2.25-2.25h15a2.25 2.25 0 0 1 2.25 2.25v2.25H2.25V10.5Zm6 6a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5Zm-3 0a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5Zm6 0a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5Z" />
+                            </svg>
+                        </div>
+                        <h4 class="mt-6 font-semibold text-lg">Create Your Profile</h4>
+                        <p class="text-sm text-gray-500 mt-2">Farmers showcase their needs and goals. Investors and researchers explore opportunities to collaborate and invest in sustainable agriculture.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg relative">
+                        <div class="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-white flex items-center justify-center font-bold text-gray-400 text-lg border border-gray-200">02</div>
+                        <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center text-white text-2xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                <path d="M19 8H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3Zm-1.5 5.25a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm3 0a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5Zm-21-3a2.25 2.25 0 0 1 2.25-2.25h15a2.25 2.25 0 0 1 2.25 2.25v2.25H2.25V10.5Zm6 6a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5Zm-3 0a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5Zm6 0a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5Z" />
+                            </svg>
+                        </div>
+                        <h4 class="mt-6 font-semibold text-lg">Match & Collaborate</h4>
+                        <p class="text-sm text-gray-500 mt-2">Our intelligent system connects the right people based on location, interests, and goals to foster meaningful cooperation and investment.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg relative">
+                        <div class="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-white flex items-center justify-center font-bold text-gray-400 text-lg border border-gray-200">03</div>
+                        <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center text-white text-2xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M18.685 19.083A2.25 2.25 0 0 0 21 17.5v-7.5a2.25 2.25 0 0 0-2.25-2.25H15.75V5.25a2.25 2.25 0 0 0-2.25-2.25h-3a2.25 2.25 0 0 0-2.25 2.25v2.5H3.75a2.25 2.25 0 0 0-2.25 2.25v7.5a2.25 2.25 0 0 0 2.25 2.25h14.935Zm-1.427-4.224a.75.75 0 0 0-.256-.576l-3.5-3.5A.75.75 0 0 0 13.5 11.25V15a.75.75 0 0 0 .75.75h1.75a.75.75 0 0 0 .53-.22Z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <h4 class="mt-6 font-semibold text-lg">Track Progress</h4>
+                        <p class="text-sm text-gray-500 mt-2">Monitor projects and measure impact through comprehensive reports, analytics, and real-time data visualization tools.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Journey Section -->
+        <section class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h3 class="text-3xl md:text-4xl font-extrabold">Our Journey</h3>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">From identifying the problem to building solutions, here’s how we’re making agriculture smarter.</p>
+                <div class="mt-12 grid md:grid-cols-3 gap-8 text-left">
+                    <div class="p-6 rounded-2xl border border-gray-200 text-center">
+                        <div class="w-16 h-16 rounded-full mx-auto bg-green-600 flex items-center justify-center text-white font-bold text-2xl">1</div>
+                        <h4 class="mt-6 font-semibold text-lg">Problem Identification</h4>
+                        <p class="text-sm text-gray-500 mt-2">Discovered funding challenges during Zangilan bootcamp.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl border border-gray-200 text-center">
+                        <div class="w-16 h-16 rounded-full mx-auto bg-green-600 flex items-center justify-center text-white font-bold text-2xl">2</div>
+                        <h4 class="mt-6 font-semibold text-lg">Solution Development</h4>
+                        <p class="text-sm text-gray-500 mt-2">Created platform concept and won Sabah.hub hackathon.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl border border-gray-200 text-center">
+                        <div class="w-16 h-16 rounded-full mx-auto bg-green-600 flex items-center justify-center text-white font-bold text-2xl">3</div>
+                        <h4 class="mt-6 font-semibold text-lg">Current Phase</h4>
+                        <p class="text-sm text-gray-500 mt-2">Meeting with investors and farmers to refine opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h3 class="text-3xl md:text-4xl font-extrabold">About AuraFarming</h3>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Born from the need to bridge the gap between traditional farming and modern technology, AuraFarming is revolutionizing agriculture in Azerbaijan and beyond.</p>
+                <div class="mt-12 grid md:grid-cols-2 gap-8 text-left">
+                    <div class="p-6 rounded-2xl shadow-lg bg-white">
+                        <h4 class="text-lg font-semibold text-gray-900">Our Story</h4>
+                        <p class="mt-2 text-sm text-gray-500">The idea for AuraFarming emerged during a bootcamp in Zangilan in May 2025, where our team had the opportunity to interact directly with farmers and villagers. Their main challenge was the difficulty in obtaining financial support. This observation led to the formation of the idea to create a unified platform that brings farmers and investors together, fostering collaboration and sustainable growth in agriculture.</p>
+                        <div class="mt-4 space-y-2">
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75Zm0 17.5a.75.75 0 0 1-.75-.75V8.25a.75.75 0 0 1 1.5 0v10.5a.75.75 0 0 1-.75.75Z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900">Sabah.hub Winner</strong>
+                                    <div class="text-xs text-gray-500">Hackathon champion</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75Zm0 17.5a.75.75 0 0 1-.75-.75V8.25a.75.75 0 0 1 1.5 0v10.5a.75.75 0 0 1-.75.75Z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900">Incubation Ready</strong>
+                                    <div class="text-xs text-gray-500">Moving to next phase</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-lg">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.879m0 0a.75.75 0 1 1-1.06-1.06l.338-.338v-.563h-.563a.75.75 0 0 1-.75-.75V12a.75.75 0 0 1 .75-.75h.563V10.25l-.338-.338a.75.75 0 1 1 1.06-1.06l.879.879M15 15.75a.75.75 0 0 0 .75.75h.75a.75.75 0 0 0 .75-.75v-.75a.75.75 0 0 0-.75-.75h-.75a.75.75 0 0 0-.75.75v.75Z" />
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-lg">Our Mission</h4>
+                            </div>
+                            <p class="mt-4 text-sm text-gray-500">To revolutionize agriculture by connecting technology with traditional farming, creating sustainable partnerships between farmers, investors, and researchers.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-lg">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 9.75a1.5 1.5 0 0 1 3 0v4.5a1.5 1.5 0 0 1-3 0v-4.5Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 9.75a1.5 1.5 0 0 1 3 0v4.5a1.5 1.5 0 0 1-3 0v-4.5Z" />
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-lg">Our Vision</h4>
+                            </div>
+                            <p class="mt-4 text-sm text-gray-500">To create a thriving agricultural ecosystem where technology empowers farmers, investors find sustainable opportunities, and communities prosper together.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get In Touch Section -->
+        <section id="contact" class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h3 class="text-3xl md:text-4xl font-extrabold">Get in Touch</h3>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Ready to transform agriculture? Contact us for collaboration, feedback, or investment opportunities.</p>
+                <div class="mt-12 grid md:grid-cols-2 gap-8 text-left">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h4 class="text-xl font-semibold">Contact Information</h4>
+                        <p class="mt-2 text-sm text-gray-500">We're here to help you succeed in smart agriculture. Reach out to us for any inquiries.</p>
+                        <ul class="mt-6 space-y-4">
+                            <li class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                                        <path d="M1.5 8.67v8.586a1.5 1.5 0 0 0 1.5 1.5h18a1.5 1.5 0 0 0 1.5-1.5V8.67l-9.124 5.257a1.5 1.5 0 0 1-1.502 0L1.5 8.67Z" />
+                                        <path d="M22.5 6.907L12 1.957 1.5 6.907V8.58a1.5 1.5 0 0 0 .362.133l9.5 5.464a1.5 1.5 0 0 0 1.556 0l9.5-5.464a1.5 1.5 0 0 0 .362-.133V6.907Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Email</p>
+                                    <a href="mailto:info@aurafarming.com" class="text-sm text-gray-500">info@aurafarming.com</a>
+                                </div>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                                        <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h15a3 3 0 0 1 3 3v15a3 3 0 0 1-3 3h-15a3 3 0 0 1-3-3v-15Z" clip-rule="evenodd" />
+                                        <path d="M10.875 10.875c.162.2.396.396.657.53a.75.75 0 0 0 1.25-.972c-.227-.294-.486-.593-.687-.872A6.749 6.749 0 0 1 12 3.75a6.75 6.75 0 0 1 6.75 6.75c0 1.77-1.144 3.428-2.618 4.675a3.75 3.75 0 0 0-.825 2.19v.42a.75.75 0 0 1-1.5 0v-.42a2.25 2.25 0 0 1 .55-1.593A5.253 5.253 0 0 0 12 10.5h-.003a.75.75 0 0 0-.75.75Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Phone</p>
+                                    <a href="tel:+994500000000" class="text-sm text-gray-500">+994 50 000 0000</a>
+                                </div>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                                        <path d="M12 2.25C6.514 2.25 2 6.514 2 12s4.514 9.75 9.75 9.75h.5c5.236 0 9.75-4.514 9.75-9.75S17.486 2.25 12 2.25Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Location</p>
+                                    <p class="text-sm text-gray-500">Baku, Azerbaijan</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h4 class="text-xl font-semibold">Send us a Message</h4>
+                        <p class="mt-2 text-sm text-gray-500">Tell us about your agricultural needs or investment interests.</p>
+                        <form class="mt-6 space-y-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 transition" placeholder="First Name" />
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 transition" placeholder="Last Name" />
+                            </div>
+                            <div>
+                                <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 transition" placeholder="Email Address" />
+                            </div>
+                            <div>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white focus:ring-green-500 focus:border-green-500 transition">
+                                    <option value="">Your Role</option>
+                                    <option>Farmer</option>
+                                    <option>Investor</option>
+                                    <option>Researcher</option>
+                                </select>
+                            </div>
+                            <div>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 transition" placeholder="Subject" />
+                            </div>
+                            <div>
+                                <textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 transition" rows="4" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="w-full px-6 py-3 bg-green-600 text-white font-medium rounded-lg shadow-md hover:bg-green-700 transition duration-300">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-white border-t">
-        <div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between text-sm text-gray-500">
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
             <div>© 2025 AuraFarming • All rights reserved</div>
-            <div class="space-x-4">
+            <div class="mt-4 md:mt-0 space-x-4">
                 <a href="#" class="hover:text-gray-700">Privacy</a>
                 <a href="#" class="hover:text-gray-700">Terms</a>
             </div>
         </div>
     </footer>
+
 </body>
 </html>
