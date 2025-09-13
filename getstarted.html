@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Started - AuraFarming</title>
+    <title>Başlayın - AuraFarming</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -41,18 +41,18 @@
         <div class="w-full max-w-md bg-white p-8 md:p-10 rounded-3xl shadow-2xl">
             <div class="text-center mb-8">
                 <h1 class="text-3xl font-bold text-emerald-600">AuraFarming</h1>
-                <p class="mt-2 text-sm text-gray-500">Connect, Grow, Harvest.</p>
+                <p class="mt-2 text-sm text-gray-500">Əlaqə qur, Böyü, Məhsul yığ.</p>
             </div>
 
             <!-- Tab Navigation -->
             <div class="flex border-b border-gray-200">
                 <button id="login-tab" class="flex-1 py-3 text-center text-sm font-semibold rounded-t-lg transition-colors duration-200 border-b-2 border-transparent hover:border-emerald-500 text-gray-500 active:border-emerald-500 active:text-emerald-600"
                         onclick="showForm('login')">
-                    Login
+                    Daxil ol
                 </button>
                 <button id="register-tab" class="flex-1 py-3 text-center text-sm font-semibold rounded-t-lg transition-colors duration-200 border-b-2 border-transparent hover:border-emerald-500 text-gray-500 active:border-emerald-500 active:text-emerald-600"
                         onclick="showForm('register')">
-                    Register
+                    Qeydiyyat
                 </button>
             </div>
 
@@ -60,14 +60,14 @@
             <div id="login-form" class="form-container active mt-8">
                 <form action="#" method="POST" class="space-y-6">
                     <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                        <label for="email" class="block text-sm font-medium text-gray-700">E-poçt ünvanı</label>
                         <div class="mt-1">
                             <input id="email" name="email" type="email" autocomplete="email" required class="block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-emerald-500 focus:border-emerald-500">
                         </div>
                     </div>
 
                     <div>
-                        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                        <label for="password" class="block text-sm font-medium text-gray-700">Şifrə</label>
                         <div class="mt-1">
                             <input id="password" name="password" type="password" autocomplete="current-password" required class="block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-emerald-500 focus:border-emerald-500">
                         </div>
@@ -76,16 +76,16 @@
                     <div class="flex items-center justify-between">
                         <div class="flex items-center">
                             <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-emerald-600 border-gray-300 rounded focus:ring-emerald-500">
-                            <label for="remember-me" class="ml-2 block text-sm text-gray-900">Remember me</label>
+                            <label for="remember-me" class="ml-2 block text-sm text-gray-900">Məni xatırla</label>
                         </div>
                         <div class="text-sm">
-                            <a href="#" class="font-medium text-emerald-600 hover:text-emerald-500">Forgot your password?</a>
+                            <a href="#" class="font-medium text-emerald-600 hover:text-emerald-500">Şifrənizi unutmusunuz?</a>
                         </div>
                     </div>
 
                     <div>
                         <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500">
-                            Login
+                            Daxil ol
                         </button>
                     </div>
                 </form>
@@ -95,28 +95,28 @@
             <div id="register-form" class="form-container mt-8">
                 <form action="#" method="POST" class="space-y-6">
                     <div>
-                        <label for="full-name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <label for="full-name" class="block text-sm font-medium text-gray-700">Tam Ad</label>
                         <div class="mt-1">
                             <input id="full-name" name="full-name" type="text" autocomplete="name" required class="block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-emerald-500 focus:border-emerald-500">
                         </div>
                     </div>
 
                     <div>
-                        <label for="register-email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                        <label for="register-email" class="block text-sm font-medium text-gray-700">E-poçt ünvanı</label>
                         <div class="mt-1">
                             <input id="register-email" name="email" type="email" autocomplete="email" required class="block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-emerald-500 focus:border-emerald-500">
                         </div>
                     </div>
 
                     <div>
-                        <label for="register-password" class="block text-sm font-medium text-gray-700">Password</label>
+                        <label for="register-password" class="block text-sm font-medium text-gray-700">Şifrə</label>
                         <div class="mt-1">
                             <input id="register-password" name="password" type="password" autocomplete="new-password" required class="block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-emerald-500 focus:border-emerald-500">
                         </div>
                     </div>
 
                     <div>
-                        <label for="confirm-password" class="block text-sm font-medium text-gray-700">Confirm Password</label>
+                        <label for="confirm-password" class="block text-sm font-medium text-gray-700">Şifrəni təsdiqlə</label>
                         <div class="mt-1">
                             <input id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" required class="block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-emerald-500 focus:border-emerald-500">
                         </div>
@@ -124,7 +124,7 @@
 
                     <div>
                         <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500">
-                            Register
+                            Qeydiyyatdan keç
                         </button>
                     </div>
                 </form>
